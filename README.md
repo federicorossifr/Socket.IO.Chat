@@ -4,7 +4,7 @@ If you want to try the app:
 
 <ul>
   <li>Clone into the project <strong>https://github.com/osirisf/Socket.IO.Chat.git</strong></li>
-  <li>Open a command prompt/terminal on the main folder ( the one that contains server.js)
+  <li>Open a command prompt/terminal on the main folder ( the one that contains app.js)
   <li> Type <code>npm install</code> it will install app dependencies
   <li>Type <code>npm start</code> it will run app.</li>
   <li>The app will listen on all interfaces 0.0.0.0@80 by default.</li>
