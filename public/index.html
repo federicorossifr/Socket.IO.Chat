@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Socket test</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+
+    </script>
+  </head>
+  <body class="container">
+      <header>
+        <h1>SocketIO Chat</h1>
+      </header>
+      <div class="row">
+        <div class="col-md-4">
+          <div id="register" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Pick a username and register</h3>
+            </div>
+
+            <div class="panel-body">
+              <form id="regForm" action="">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input class="form-control" id="usernameInput" type="text" name="username" value="">
+                </div>
+                <button type="submit" class="btn btn-primary">Start!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="events" class="col-md-8">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last events</h3>
+            </div>
+
+            <div class="panel-body">
+              <ul class="list-group" id="notify">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+      <div id="messaging" class="row">
+        <div class="col-md-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Send message</h3>
+            </div>
+
+            <div id="send" class="panel-body">
+              <form id="sendForm" action="">
+                <div class="form-group">
+                  <label for="message">Type a message</label>
+                  <input class="form-control" type="text" name="message" id="message" value="">
+                </div>
+                <button type="submit" class="btn btn-danger" name="button">Send</button>
+              </form>
+           </div>
+          </div>
+        </div>
+
+        <!--<div class="col-md-4">
+          <div class="panel panel-primary">
+            <ul id="users" class="list-group">
+            </ul>
+          </div>
+        </div>-->
+
+        <div class="col-md-8">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Messages</h3>
+            </div>
+
+            <div class="panel-body">
+              <ul class="list-group" id="messages">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+     </div>
+  </body>
+
+  <script type="text/javascript" src="./js/app.js"></script>
+
+</html>
